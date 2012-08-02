@@ -35,6 +35,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <DeployIisAppPath>zachi.me</DeployIisAppPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework">
@@ -74,12 +76,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Copy of site.css">
-      <DependentUpon>site.float.less</DependentUpon>
-    </Content>
-    <Content Include="Content\Copy of site.min.css">
-      <DependentUpon>site.float.less</DependentUpon>
-    </Content>
     <Content Include="Content\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
@@ -171,7 +167,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\site.percentage.less" />
-    <None Include="Content\site.float.less" />
     <None Include="Content\site.less" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
