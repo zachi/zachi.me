@@ -22,4 +22,7 @@
 
     })
   })
+
+  //var width = $('.category').eq(0).css(width);
+
 })
