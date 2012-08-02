@@ -1,0 +1,78 @@
+body {
+  font-family: 'Capriola', sans-serif;
+}
+h1 {
+  font-size: 32px;
+}
+#bento {
+  border: 2px solid black;
+  width: 60%;
+  margin: 4% auto;
+  height: 670px;
+}
+.name-title {
+  border: 2px solid black;
+  text-align: center;
+  height: 20%;
+}
+.categories {
+  height: 80%;
+}
+.category {
+  width: 50%;
+  float: left;
+  text-align: center;
+  height: 50%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 32px;
+  transition: width 1s;
+  -moz-transition: width 1s;
+  /* Firefox 4 */
+
+  -webkit-transition: width 1s;
+  /* Safari and Chrome */
+
+  -o-transition: width 1s;
+  /* Opera */
+
+}
+.category h1 {
+  margin: 25%;
+  transition: margin 1s;
+  -moz-transition: margin 1s;
+  /* Firefox 4 */
+
+  -webkit-transition: margin 1s;
+  /* Safari and Chrome */
+
+  -o-transition: margin 1s;
+  /* Opera */
+
+}
+#my-self:hover {
+  background-color: Blue;
+}
+#resume {
+  float: right;
+}
+#resume:hover {
+  background-color: Red;
+}
+#skills:hover {
+  background-color: Yellow;
+}
+#contact:hover {
+  background-color: Green;
+}
+#contact {
+  float: right;
+}
+.category-mini {
+  width: 25%;
+  height: 8%;
+}
+.category-mini h1 {
+  margin: 1%;
+}
