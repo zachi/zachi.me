@@ -3,26 +3,30 @@ body {
 }
 h1 {
   font-size: 32px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
-#bento {
+#main {
   border: 2px solid black;
-  width: 60%;
-  margin: 4% auto;
-  height: 670px;
+  width: 800px;
+  height: 600px;
+  margin: 10% auto;
 }
 .name-title {
   border: 2px solid black;
   text-align: center;
-  height: 20%;
+  height: 100px;
+  padding-top: 20px;
 }
 .categories {
-  height: 80%;
+  height: 478px;
   position: relative;
   box-sizing: border-box;
 }
-.category {
-  width: 50%;
-  height: 50%;
+.simon-button {
+  width: 400px;
+  height: 238px;
+  background-color: white;
   position: absolute;
   text-align: center;
   border: 2px solid black;
@@ -31,86 +35,97 @@ h1 {
   font-size: 32px;
   transition: width 1s, height 1s;
   -moz-transition: width 1s, height 1s;
-  -webkit-transition: width 1s, height 1s;
+  -webkit-transition: width 1s, height 1s, font-size 1s;
   -o-transition: width 1s, height 1s;
 }
-.category h1 {
+.simon-button:hover {
+  color: white;
+}
+.simon-button h1 {
   margin: 25%;
   transition: margin 1s, display 1s;
   -moz-transition: margin 1s;
   /* Firefox 4 */
 
-  -webkit-transition: margin 1s, display 1s;
+  -webkit-transition: margin 1s, display 1s, font-size 1s;
   -o-transition: margin 1s;
   /* Opera */
 
 }
-#my-self {
+.simon-button-mini {
+  direction: rtl;
+  text-align: right;
+  background-image: url(../images/icon.png);
+  background-repeat: no-repeat;
+  height: 38px!important;
+  width: 38px!important;
+  font-size: 12px;
+}
+.simon-button-mini h1 {
+  display: none;
+}
+#my-self .simon-button {
   top: 0;
   left: 0;
 }
-#my-self.category-mini {
+#my-self .simon-button:hover {
+  background-color: Blue;
+}
+#my-self .simon-button-mini {
   border-bottom: 4px solid black;
   border-right: 4px solid black;
   border-top: none;
+  border-left: none;
 }
-#my-self:hover {
-  background-color: Blue;
-}
-#resume {
+#resume .simon-button {
   top: 0;
   right: 0;
 }
-#resume.category-mini {
+#resume .simon-button:hover {
+  background-color: Red;
+  color: white;
+}
+#resume .simon-button-mini {
   border-bottom: 4px solid black;
   border-left: 4px solid black;
   border-top: none;
+  border-right: none;
 }
-#resume:hover {
-  background-color: Red;
-}
-#skills {
-  bottom: 4px;
+#skills .simon-button {
+  bottom: 2px;
   left: 0;
 }
-#skills.category-mini {
+#skills .simon-button:hover {
+  background-color: Yellow;
+}
+#skills .simon-button-mini {
   bottom: 0;
   border-top: 4px solid black;
   border-right: 4px solid black;
   border-left: none;
 }
-#skills:hover {
-  background-color: Yellow;
-}
-#contact:hover {
-  background-color: Green;
-}
-#contact {
-  bottom: 4px;
+#contact .simon-button {
+  bottom: 2px;
   right: 0;
 }
-#contact.category-mini {
+#contact .simon-button:hover {
+  background-color: Green;
+}
+#contact .simon-button-mini {
   bottom: 0;
   border-top: 4px solid black;
   border-left: 4px solid black;
   border-right: none;
-}
-.category-mini {
-  direction: rtl;
-  text-align: right;
-  background-image: url(../images/icon.png);
-  background-repeat: no-repeat;
-  width: 4%;
-  height: 8%;
-}
-.category-mini h1 {
-  display: none;
 }
 .show-category {
   border: 2px solid black;
 }
 .page {
   display: none;
-  width: 60%;
-  margin: 13% auto;
+  width: 100%;
+  height: 80%;
+}
+html,
+body {
+  height: 99%;
 }

@@ -1,24 +1,24 @@
 body{font-family:'Capriola',sans-serif}
 h1{font-size:32px;-webkit-margin-before:0;-webkit-margin-after:0}
-#bento{border:2px solid black;width:100%;height:100%}
+#main{border:2px solid black;width:100%;height:100%}
 .name-title{border:2px solid black;text-align:center;height:20%}
 .categories{height:80%;position:relative;box-sizing:border-box}
-.category{width:50%;height:50%;position:absolute;text-align:center;border:2px solid black;box-sizing:border-box;cursor:pointer;font-size:32px;transition:width 1s,height 1s;-moz-transition:width 1s,height 1s;-webkit-transition:width 1s,height 1s;-o-transition:width 1s,height 1s}
-.category h1{margin:25%;transition:margin 1s,display 1s;-moz-transition:margin 1s;-webkit-transition:margin 1s,display 1s;-o-transition:margin 1s}
-#my-self{top:0;left:0}
-#my-self.category-mini{border-bottom:4px solid black;border-right:4px solid black;border-top:0}
-#my-self:hover{background-color:Blue}
-#resume{top:0;right:0}
-#resume.category-mini{border-bottom:4px solid black;border-left:4px solid black;border-top:0}
-#resume:hover{background-color:Red}
-#skills{bottom:2px;left:0}
-#skills.category-mini{bottom:0;border-top:4px solid black;border-right:4px solid black;border-left:none}
-#skills:hover{background-color:Yellow}
-#contact:hover{background-color:Green}
-#contact{bottom:2px;right:0}
-#contact.category-mini{bottom:0;border-top:4px solid black;border-left:4px solid black;border-right:0}
-.category-mini{direction:rtl;text-align:right;background-image:url(../images/icon.png);background-repeat:no-repeat;width:2.3%;height:8%}
-.category-mini h1{display:none}
+.simon-button{width:50%;height:50%;position:absolute;text-align:center;border:2px solid black;box-sizing:border-box;cursor:pointer;font-size:32px;transition:width 1s,height 1s;-moz-transition:width 1s,height 1s;-webkit-transition:width 1s,height 1s;-o-transition:width 1s,height 1s}
+.simon-button h1{margin:25%;transition:margin 1s,display 1s;-moz-transition:margin 1s;-webkit-transition:margin 1s,display 1s;-o-transition:margin 1s}
+#my-self .simon-button{top:0;left:0}
+#my-self .simon-button:hover{background-color:Blue}
+#my-self .simon-button-mini{border-bottom:4px solid black;border-right:4px solid black;border-top:0}
+#resume .simon-button{top:0;right:0}
+#resume .simon-button:hover{background-color:Red}
+#resume .simon-button-mini{border-bottom:4px solid black;border-left:4px solid black;border-top:0}
+#skills .simon-button{bottom:2px;left:0}
+#skills .simon-button:hover{background-color:Yellow}
+#skills .simon-button-mini{bottom:0;border-top:4px solid black;border-right:4px solid black;border-left:none}
+#contact .simon-button{bottom:2px;right:0}
+#contact .simon-button:hover{background-color:Green}
+#contact .simon-button-mini{bottom:0;border-top:4px solid black;border-left:4px solid black;border-right:0}
+.simon-button-mini{direction:rtl;text-align:right;background-image:url(../images/icon.png);background-repeat:no-repeat;width:2.3%!important;height:8%!important}
+.simon-button-mini h1{display:none}
 .show-category{border:2px solid black}
 .page{display:none;width:100%;height:80%}
 html,body{height:99%}

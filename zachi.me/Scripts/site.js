@@ -1,28 +1,15 @@
 ﻿$(function () {
-  $('.category').click(function (event) {
-    var isSimon = !$(this).hasClass('category-mini');
+  $('.simon-button').click(function (event) {
+    var isSimon = !$(this).hasClass('simon-button-mini');
     if (isSimon) {
       $('.categories').addClass('show-category')
-      var categoryId = $(this).attr('id');
-      $('#' + categoryId + '-page').show();
+      $(this).siblings().eq(0).show();
+      $('.simon-button').addClass('simon-button-mini');
     }
     else {
       $('.categories').removeClass('show-category')
       $('.page').hide();
+      $('.simon-button').removeClass('simon-button-mini')
     }
-
-
-    $('.category').each(function (index, element) {
-      if (isSimon) {
-        $(element).addClass('category-mini')
-      }
-      else {
-        $(element).removeClass('category-mini')
-      }
-
-    })
   })
-
-  //var width = $('.category').eq(0).css(width);
-
 })

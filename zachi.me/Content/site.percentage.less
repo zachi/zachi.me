@@ -4,39 +4,35 @@
 @font-big:32px;
 @transition-duration:1s;
 
-body
-{
+body {
   font-family: 'Capriola', sans-serif;  
 }
 
-h1
-{
+h1 {
   font-size:@font-big;  
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 }
 
-#bento
-{
+#main {
 	border: @border;
 	width: 100%;
 	height: 100%;
 }
-.name-title
-{
+
+.name-title {
   border: @border;
   text-align: center;
   height: 20%;
 }
-.categories
-{
+
+.categories {
   height:80%;
 	position:relative;
 	box-sizing: border-box;
 }
 
-.category
-{
+.simon-button {
   //width: 470px;
 	//height: 268px;
 	width:50%;
@@ -52,8 +48,7 @@ h1
   -webkit-transition:width @transition-duration,height @transition-duration;
   -o-transition:width @transition-duration,height @transition-duration;
   
-	h1
-	{
+	h1 {
 		margin: 25%;	
 		transition:margin @transition-duration, display @transition-duration;
 		-moz-transition:margin @transition-duration; /* Firefox 4 */
@@ -64,112 +59,87 @@ h1
 	
 }
 
-#my-self
-{
-  top:0;
-	left:0;
-}
-#my-self.category-mini
-{
-	border-bottom:@border-fat;
-	border-right:@border-fat;
-	border-top:none;
-}
-#my-self:hover
-{
-  background-color:Blue;
+#my-self {
+	.simon-button {
+		top:0;
+		left:0;
+    &:hover { background-color:Blue;}
+	}
+	.simon-button-mini {
+		border-bottom:@border-fat;
+		border-right:@border-fat;
+		border-top:none;
+	}
 }
 
-#resume
-{
-  top:0;
-	right:0;
+#resume {
+	.simon-button {
+    top:0;
+	  right:0;
+	  &:hover { background-color:Red;}
+	}
+	.simon-button-mini {
+		border-bottom:@border-fat;
+		border-left:@border-fat;
+		border-top:none;
+	}
 }
 
-#resume.category-mini
-{
-	border-bottom:@border-fat;
-	border-left:@border-fat;
-	border-top:none;
+#skills {
+	.simon-button {
+    bottom:2px;
+	  left:0;
+	  &:hover { background-color:Yellow;}
+	}
+	.simon-button-mini{
+	  bottom:0;
+	  border-top:@border-fat;
+	  border-right:@border-fat;
+	  border-left:none;
+  }
 }
 
-#resume:hover
-{
-  background-color:Red;
+#contact {
+	.simon-button {
+    bottom:2px;
+	  right:0;
+	  &:hover { background-color:Green;}
+	}
+	.simon-button-mini{
+	  bottom:0;
+	  border-top:@border-fat;
+	  border-left:@border-fat;
+	  border-right:none;
+  }
+	
 }
 
-
-#skills
-{
-  bottom:2px;
-	left:0;
-}
-
-#skills.category-mini
-{
-	bottom:0;
-	border-top:@border-fat;
-	border-right:@border-fat;
-	border-left:none;
-}
-
-
-#skills:hover
-{
-  background-color:Yellow;
-}
-
-
-#contact:hover
-{
-  background-color:Green;
-}
-
-
-#contact
-{
-  bottom:2px;
-	right:0;
-}
-#contact.category-mini
-{
-	bottom:0;
-	border-top:@border-fat;
-	border-left:@border-fat;
-	border-right:none;
-}
-
-.category-mini
-{
-		direction:rtl;
-		text-align:right;
-		background-image: url(../images/icon.png);
-		background-repeat: no-repeat;
+.simon-button-mini {
+  direction:rtl;
+  text-align:right;
+  background-image: url(../images/icon.png);
+  background-repeat: no-repeat;
 //		height: 38px;
 //		width: 38px;
-		width:2.3%;
-		height:8%;
-
-		
-		h1
-		{
-			display:none;
+  width:2.3%!important;
+  height:8%!important;
+  h1 {
+    display:none;
 //			margin:1%;
-		}
+  }
 }
 
-.show-category
-{
+.show-category {
 	border:@border;
 }
-.page
-{
+
+.page {
 	display:none;
 	width: 100%;
 	height:80%;
 	//margin: 13% auto;
 }
-html, body
-{
+
+html, body {
 	height:99%;
 }

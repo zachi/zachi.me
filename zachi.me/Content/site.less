@@ -4,165 +4,145 @@
 @font-big:32px;
 @transition-duration:1s;
 
-body
-{
+body {
   font-family: 'Capriola', sans-serif;  
 }
 
-h1
-{
+h1 {
   font-size:@font-big;  
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
 }
 
-#bento
-{
+#main {
 	border: @border;
-	width: 60%;
-	margin: 4% auto;
-	height: 670px;
+	width: 800px;
+	height: 600px;
+	margin:10% auto;
 }
-.name-title
-{
+
+.name-title {
   border: @border;
   text-align: center;
-  height: 20%;
+	height: 100px;
+	padding-top: 20px;
 }
-.categories
-{
-  height:80%;
+
+.categories {
+  height:478px;
 	position:relative;
 	box-sizing: border-box;
 }
 
-.category
-{
-  //width: 470px;
-	//height: 268px;
-	width:50%;
-	height:50%;
+.simon-button {
+  width: 400px;
+	height: 238px;
+//	width:50%;
+//	height:50%;
+	background-color:white;
   position:absolute;
   text-align: center;
   border: @border;
   box-sizing: border-box;
 	cursor:pointer;
 	font-size:@font-big;
+	&:hover { color:white;}
 	transition:width @transition-duration,height @transition-duration;
   -moz-transition:width @transition-duration,height @transition-duration;
-  -webkit-transition:width @transition-duration,height @transition-duration;
+  -webkit-transition:width @transition-duration,height @transition-duration, font-size @transition-duration;
   -o-transition:width @transition-duration,height @transition-duration;
   
-	h1
-	{
+	h1 {
 		margin: 25%;	
 		transition:margin @transition-duration, display @transition-duration;
 		-moz-transition:margin @transition-duration; /* Firefox 4 */
-		-webkit-transition:margin @transition-duration, display @transition-duration;
+		-webkit-transition:margin @transition-duration, display @transition-duration, font-size @transition-duration;
 		-o-transition:margin @transition-duration; /* Opera */
 	}
-  	
+}
+
+.simon-button-mini {
+  direction:rtl;
+  text-align:right;
+  background-image: url(../images/icon.png);
+  background-repeat: no-repeat;
+	height: 38px!important;
+	width: 38px!important;
+	font-size:12px;
+  h1 {
+    display:none;
+//			margin:1%;
+  }
+}
+
+#my-self {
+	.simon-button {
+		top:0;
+		left:0;
+    &:hover { background-color:Blue;}
+	}
+	.simon-button-mini {
+		border-bottom:@border-fat;
+		border-right:@border-fat;
+		border-top: none;
+		border-left: none;
+	}
+}
+
+#resume {
+	.simon-button {
+    top:0;
+	  right:0;
+	  &:hover { background-color:Red;color:white;}
+	}
+	.simon-button-mini {
+		border-bottom:@border-fat;
+		border-left:@border-fat;
+		border-top:none;
+		border-right:none;
+	}
+}
+
+#skills {
+	.simon-button {
+    bottom:2px;
+	  left:0;
+	  &:hover { background-color:Yellow;}
+	}
+	.simon-button-mini{
+	  bottom:0;
+	  border-top:@border-fat;
+	  border-right:@border-fat;
+	  border-left:none;
+  }
+}
+
+#contact {
+	.simon-button {
+    bottom:2px;
+	  right:0;
+	  &:hover { background-color:Green;}
+	}
+	.simon-button-mini{
+	  bottom:0;
+	  border-top:@border-fat;
+	  border-left:@border-fat;
+	  border-right:none;
+  }
 	
 }
 
-#my-self
-{
-  top:0;
-	left:0;
-}
-#my-self.category-mini
-{
-	border-bottom:@border-fat;
-	border-right:@border-fat;
-	border-top:none;
-}
-#my-self:hover
-{
-  background-color:Blue;
-}
-
-#resume
-{
-  top:0;
-	right:0;
-}
-
-#resume.category-mini
-{
-	border-bottom:@border-fat;
-	border-left:@border-fat;
-	border-top:none;
-}
-
-#resume:hover
-{
-  background-color:Red;
-}
-
-
-#skills
-{
-  bottom:4px;
-	left:0;
-}
-
-#skills.category-mini
-{
-	bottom:0;
-	border-top:@border-fat;
-	border-right:@border-fat;
-	border-left:none;
-}
-
-
-#skills:hover
-{
-  background-color:Yellow;
-}
-
-
-#contact:hover
-{
-  background-color:Green;
-}
-
-
-#contact
-{
-  bottom:4px;
-	right:0;
-}
-#contact.category-mini
-{
-	bottom:0;
-	border-top:@border-fat;
-	border-left:@border-fat;
-	border-right:none;
-}
-
-.category-mini
-{
-		direction:rtl;
-		text-align:right;
-		background-image: url(../images/icon.png);
-		background-repeat: no-repeat;
-//		height: 38px;
-//		width: 38px;
-		width:4%;
-		height:8%;
-		
-		h1
-		{
-			display:none;
-//			margin:1%;
-		}
-}
-
-.show-category
-{
+.show-category {
 	border:@border;
 }
-.page
-{
+
+.page {
 	display:none;
-	width: 60%;
-	margin: 13% auto;
+	width: 100%;
+	height:80%;
+	//margin: 13% auto;
+}
+
+html, body {
+	height:99%;
 }
