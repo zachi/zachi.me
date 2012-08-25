@@ -1,4 +1,4 @@
-body{font-family:'Capriola',sans-serif}
+body{font-family:'Capriola',sans-serif;font-size:14px}
 h1{font-size:32px;-webkit-margin-before:0;-webkit-margin-after:0}
 #main{border:2px solid black;width:800px;height:600px;margin:6% auto}
 .name-title{border:2px solid black;text-align:center;height:100px;padding-top:20px;cursor:pointer}
@@ -7,9 +7,10 @@ h1{font-size:32px;-webkit-margin-before:0;-webkit-margin-after:0}
 .simon-button{width:400px;height:238px;background-color:white;position:absolute;text-align:center;border:2px solid black;box-sizing:border-box;cursor:pointer;font-size:32px;transition:width 1s,height 1s;-moz-transition:width 1s,height 1s;-webkit-transition:width 1s,height 1s;-o-transition:width 1s,height 1s}
 .simon-button:hover{color:white}
 .simon-button h1{margin:25%;transition:margin 1s,display 1s;-moz-transition:margin 1s;-webkit-transition:margin 1s,display 1s;-o-transition:margin 1s}
-.simon-button-mini{direction:rtl;text-align:right;background-image:url(../images/icon.png?aaaaaaa333);background-repeat:no-repeat;height:38px!important;width:38px!important;font-size:12px;z-index:2}
+.simon-button-mini{direction:rtl;text-align:right;background-image:url(../images/icon.png?7878);background-repeat:no-repeat;height:38px!important;width:38px!important;font-size:12px;z-index:2}
+.simon-button-mini:hover{background-image:url(../images/icon.white.png?888)}
 .simon-button-mini h1{display:none}
-.simon-button-mini.selected{background-image:url(../images/icon.white.png?aaaaee)}
+.simon-button-mini.selected{background-image:url(../images/icon.white.png?888)}
 #my-self .simon-button{top:0;left:0}
 #my-self .simon-button:hover{background-color:Blue}
 #my-self .simon-button-mini{border-bottom:4px solid black;border-right:4px solid black;border-top:0;border-left:none}
@@ -25,6 +26,10 @@ h1{font-size:32px;-webkit-margin-before:0;-webkit-margin-after:0}
 #skills .simon-button-mini{bottom:0;border-top:4px solid black;border-right:4px solid black;border-left:none}
 #skills .selected{background-color:Yellow}
 #skills .page{bottom:0;left:0}
+#skills .page .skill{margin:1% 0 0 8%;float:left}
+#skills .page .progress{width:200px;display:inline-block;height:27px}
+#skills .page .progress .bar{height:27px}
+#skills .page .skill-title{vertical-align:top;margin:0;display:block;margin-bottom:3px;font-size:22px}
 #skills .page-visible{margin-bottom:100px}
 #contact .simon-button{bottom:2px;right:0}
 #contact .simon-button:hover{background-color:Green}
@@ -36,3 +41,4 @@ h1{font-size:32px;-webkit-margin-before:0;-webkit-margin-after:0}
 .page span{margin:0 15% 15% 15%;display:inline-block}
 .page h1{margin:15% 15% 0 15%;display:inline-block}
 .page-visible{width:796px;height:80%}
+.page-body{width:80%;margin:2% auto}

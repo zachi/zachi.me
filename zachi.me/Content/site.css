@@ -1,5 +1,6 @@
 body {
   font-family: 'Capriola', sans-serif;
+  font-size: 14px;
 }
 h1 {
   font-size: 32px;
@@ -59,18 +60,21 @@ h1 {
 .simon-button-mini {
   direction: rtl;
   text-align: right;
-  background-image: url(../images/icon.png?aaaaaaa333);
+  background-image: url(../images/icon.png?7878);
   background-repeat: no-repeat;
   height: 38px!important;
   width: 38px!important;
   font-size: 12px;
   z-index: 2;
 }
+.simon-button-mini:hover {
+  background-image: url(../images/icon.white.png?888);
+}
 .simon-button-mini h1 {
   display: none;
 }
 .simon-button-mini.selected {
-  background-image: url(../images/icon.white.png?aaaaee);
+  background-image: url(../images/icon.white.png?888);
 }
 #my-self .simon-button {
   top: 0;
@@ -133,6 +137,25 @@ h1 {
   bottom: 0;
   left: 0;
 }
+#skills .page .skill {
+  margin: 1% 0 0 8%;
+  float: left;
+}
+#skills .page .progress {
+  width: 200px;
+  display: inline-block;
+  height: 27px;
+}
+#skills .page .progress .bar {
+  height: 27px;
+}
+#skills .page .skill-title {
+  vertical-align: top;
+  margin: 0;
+  display: block;
+  margin-bottom: 3px;
+  font-size: 22px;
+}
 #skills .page-visible {
   margin-bottom: 100px;
 }
@@ -181,4 +204,8 @@ h1 {
 .page-visible {
   width: 796px;
   height: 80%;
+}
+.page-body {
+  width: 80%;
+  margin: 2% auto;
 }

@@ -1,9 +1,9 @@
-﻿$(function () {
-  $('.simon-button').click(simonApp.simonButtonClickHandler)
-  $('.name-title').click(simonApp.nameTitleClickHandler);
-})
+﻿
 var simonApp = (function () {
-
+  $(function () {
+    $('.simon-button').click(simonApp.simonButtonClickHandler)
+    $('.name-title').click(simonApp.nameTitleClickHandler);
+  })
   return {
     simonButtonClickHandler: function (event) {
 
